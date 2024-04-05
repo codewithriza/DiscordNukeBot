@@ -8,16 +8,7 @@ load_dotenv()
 
 bot = commands.Bot(
     command_prefix='.',
-    intents=discord.Intents(
-        guilds=True,
-        members=True,
-        bans=True,
-        emojis=True,
-        voice_states=True,
-        messages=True,
-        reactions=True,
-        message_content=True,
-    ),
+    intents=discord.all(),
     help_command=None
 )
 
